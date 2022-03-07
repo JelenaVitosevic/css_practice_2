@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+body {
+    background: #f8edeb;
+}
+
+.heading {
+    text-align: center;
+    font-size: 36px;
+    padding: 22px 0px;
+    color: #ffadad;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /*repeat each card, automatically calculate width, for each card min width is 240px and max width will automatically get calculated*/
+    grid-gap: 15px; /* apply 15px gap between the card on each side */
+    padding: 20px; /* padding around the container */
+}
+
+.card-container .card {
+    padding: 10px;
+    border: 3px solid #ffadad;
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 5px 5px #ffadad;
+}
+
+.card-container .card .card-icon {
+    margin-top: 10px;
+}
+
+.card-container .card .card-icon span {
+    margin: 10px 0px;
+    font-size: 32px;
+    color: #ffadad;
+}
+
+.card-container .card .card-title {
+    color: #ffadad;
+    font-size: 21px;
+    margin-top: 5px;
+
+}
+
+.card-container .card p {
+    font-size: 14px;
+    color: #6d6875;
+    padding: 10px;
+}
+
+.card-container .card a {
+    color: #ffadad;
+    text-decoration: none;
+    display: block;/* making it block will make anchor occupy the whole row width */
+    font-size: 18px;
+    padding: 10px 0px;
+}
+
+.card-container .card a:hover {
+    color: #ffc6c6;
+}
